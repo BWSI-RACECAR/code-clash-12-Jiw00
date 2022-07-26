@@ -34,7 +34,7 @@ class Solution:
         for i in range(len(ary)-1,-1,-1):
             if ary[i] == 9:
                 ary[i] = 0
-                if len(ary)+i == 0:
+                if i == 0::
                     ary.insert(i,1)
                     return ary
             else:
